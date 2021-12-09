@@ -51,8 +51,8 @@ const plugins = () => {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, 'src/favicon.ico'),
-          to: path.resolve(__dirname, 'docs'),
+          from: path.resolve(__dirname, 'src/assets/favicons'),
+          to: path.resolve(__dirname, 'dist'),
         },
       ],
     }),
@@ -73,12 +73,12 @@ module.exports = {
   },
   output: {
     filename: filename('js'),
-    path: path.resolve(__dirname, 'docs'),
+    path: path.resolve(__dirname, 'dist'),
   },
   optimization: optimization(),
   devServer: {
     static: {
-      directory: path.join(__dirname, 'docs'),
+      directory: path.join(__dirname, 'dist'),
     },
     compress: true,
     port: 9000,
