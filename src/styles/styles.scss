@@ -10,6 +10,12 @@ body {
 // NAVIGATION
 
 .nav {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+
   &__list {
     display: flex;
     flex-direction: row;
@@ -34,6 +40,12 @@ body {
     background-color: hsl(169, 60%, 60%);
     color: hsl(232, 59%, 20%);
     font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: hsl(169, 60%, 50%);
+    }
   }
 }
 
@@ -46,7 +58,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   top: 0;
   left: 0;
   background-color: hsla(0, 0%, 0%, 0.5);
@@ -132,13 +144,13 @@ body {
 // BOOK SEARCH SECTION
 
 .book-search {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   top: 0;
   left: 0;
 
