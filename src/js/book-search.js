@@ -59,12 +59,3 @@ function showSearchResult(array) {
     searchOutput.innerHTML = result;
   });
 }
-
-// searchOutput.addEventListener('click', function (e) {
-//   e.preventDefault();
-//   const clickedPage = e.target;
-//   console.log(clickedPage);
-
-//   // searchOutput.innerHTML = ' ';
-//   // showSearchResult(data);
-// });
