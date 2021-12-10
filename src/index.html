@@ -21,7 +21,7 @@
             <button class="nav__item-btn" id="popup-btn">Modal</button>
           </li>
           <li class="nav__item">
-            <button class="nav__item-btn">Search</button>
+            <button class="nav__item-btn" id="search-btn">Search</button>
           </li>
         </ul>
       </nav>
@@ -59,10 +59,15 @@
           </div>
         </div>
       </section>
-      <section class="book-search">
+      <section class="book-search" id="book-search">
         <div class="book-search__container">
-          <input class="book-search__input" type="search" />
-          <div class="book-search__result"></div>
+          <input
+            class="book-search__input"
+            id="book-search-input"
+            type="search"
+            placeholder="Search some good book"
+          />
+          <div class="book-search__result" id="book-search-result"></div>
         </div>
       </section>
     </main>
