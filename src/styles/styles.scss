@@ -128,3 +128,41 @@ body {
     }
   }
 }
+
+// BOOK SEARCH SECTION
+
+.book-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__input {
+    width: 340px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    outline-style: none;
+    padding: 15px;
+    color: hsl(232, 59%, 20%);
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0 20px hsl(232, 59%, 20%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 20px hsl(232, 59%, 20%);
+    }
+  }
+}
