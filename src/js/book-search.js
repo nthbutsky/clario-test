@@ -3,16 +3,19 @@ const searchBtn = document.querySelector('#search-btn');
 const searchInput = document.querySelector('#book-search-input');
 const searchOutput = document.querySelector('#book-search-result');
 const arrow = document.querySelector('#arrow');
+const loader = document.querySelector('#loader');
 
 let inputTimer;
-const doneTypingInterval = 1000;
+const doneTypingInterval = 3000;
 const baseUrl = 'https://www.googleapis.com/books/v1/volumes?q=';
 const maxResults = '&maxResults=40';
 
 searchBtn.addEventListener('click', showBookSearch);
 searchInput.addEventListener('keyup', () => {
   clearTimeout(inputTimer);
+  searchOutput.innerHTML = ' ';
   if (searchInput.value.length > 3) {
+    loader.style.display = 'initial';
     inputTimer = setTimeout(searchBook, doneTypingInterval);
   }
 });
@@ -28,6 +31,7 @@ async function searchBook() {
     const searchQuery = searchInput.value;
     const response = await fetch(baseUrl + searchQuery + maxResults);
     const data = await response.json();
+    loader.style.display = 'none';
     searchOutput.innerHTML = ' ';
     showSearchResult(data.items);
   } catch (error) {
