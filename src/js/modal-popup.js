@@ -3,6 +3,7 @@ const popupBtn = document.querySelector('#popup-btn');
 const modalPopupCloseBtn = document.querySelector('#cancel-btn');
 const cancelBtn = document.querySelector('#modal-close-btn');
 const uninstallBtn = document.querySelector('#uninstall-btn');
+const arrow = document.querySelector('#arrow');
 
 popupBtn.addEventListener('click', showModalPopup);
 modalPopupCloseBtn.addEventListener('click', hideModalPopup);
@@ -26,8 +27,10 @@ uninstallBtn.addEventListener('click', function () {
 
 function showModalPopup() {
   modalPopup.style.display = 'flex';
+  arrow.style.display = 'none';
 }
 
 function hideModalPopup() {
   modalPopup.style.display = 'none';
+  arrow.style.display = 'initial';
 }

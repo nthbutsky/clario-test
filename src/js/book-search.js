@@ -2,6 +2,7 @@ const bookSearch = document.querySelector('#book-search');
 const searchBtn = document.querySelector('#search-btn');
 const searchInput = document.querySelector('#book-search-input');
 const searchOutput = document.querySelector('#book-search-result');
+const arrow = document.querySelector('#arrow');
 
 let inputTimer;
 const doneTypingInterval = 1000;
@@ -20,6 +21,7 @@ searchInput.addEventListener('keyup', () => {
 function showBookSearch() {
   bookSearch.style.display = 'flex';
   searchInput.focus();
+  arrow.style.display = 'none';
 }
 
 async function searchBook() {
