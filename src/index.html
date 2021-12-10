@@ -14,6 +14,51 @@
     <title>Clario Test Tasks</title>
   </head>
   <body>
-    Hello
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <button class="nav__item-btn">Pop-up task</button>
+          </li>
+          <li class="nav__item">
+            <button class="nav__item-btn">Search task</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="modal-popup">
+        <div class="modal-popup__container">
+          <div class="modal-popup__close-btn">
+            <img
+              class="modal-popup__close-icon"
+              src="./assets/icons/icon-popup-close.svg"
+              alt=""
+            />
+          </div>
+          <img
+            class="modal-popup__warning-icon"
+            src="./assets/icons/icon-warning_notify-red.svg"
+            alt=""
+          />
+          <p class="modal-popup__main-text">This is an amazing pop-up</p>
+          <div class="modal-popup__btn-container">
+            <button class="modal-popup__btn">Cancel</button>
+            <button class="modal-popup__btn modal-popup__btn_accent-color">
+              Uninstall
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="book-search">
+        <div class="book-search__container">
+          <input class="book-search__input" type="search" />
+          <div class="book-search__result"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer-text">2021</p>
+    </footer>
   </body>
 </html>
