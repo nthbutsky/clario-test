@@ -44,7 +44,7 @@ function renderItem(item) {
   result += `<div class="book-search__item" title="Click to see more">
               <a href="${item.volumeInfo.infoLink}" target="blank">
               <img src="${item.volumeInfo.imageLinks.thumbnail}" alt="${item.volumeInfo.title}">
-              <div class="book-search__item-hover">
+              <div class="book-search__item-cover">
               <p>${item.volumeInfo.title}</p>
               </div>
               </a>

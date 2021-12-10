@@ -218,7 +218,7 @@ body {
       transform: scale(1.3);
     }
 
-    &:hover .book-search__item-hover {
+    &:hover .book-search__item-cover {
       transition: all 0.3s ease-in-out;
       visibility: visible;
       background-color: hsla(0, 0%, 0%, 0.5);
@@ -226,7 +226,7 @@ body {
     }
   }
 
-  &__item-hover {
+  &__item-cover {
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -241,9 +241,9 @@ body {
     font-weight: bold;
 
     &:hover p {
-      animation: card-icon-rotate 0.3s ease-out;
+      animation: item-text-rotate 0.3s ease-out;
 
-      @keyframes card-icon-rotate {
+      @keyframes item-text-rotate {
         0% {
           transform: rotate(0);
         }
