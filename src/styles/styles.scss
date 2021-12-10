@@ -6,3 +6,125 @@ body {
   height: 100%;
   background: linear-gradient(91.55deg, #483fdd 0.76%, #7c42d5 98.12%);
 }
+
+// NAVIGATION
+
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 0 5px;
+  }
+
+  &__item-btn {
+    padding: 10px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: hsl(169, 60%, 60%);
+    color: hsl(232, 59%, 20%);
+    font-weight: bold;
+  }
+}
+
+// MODAL POPUP SECTION
+
+.modal-popup {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: hsla(0, 0%, 0%, 0.5);
+
+  &__container {
+    position: relative;
+    width: 320px;
+    height: 190px;
+    padding: 30px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 5px;
+  }
+
+  &__close-icon-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  &__close-icon {
+    transform: scale(0.8);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+
+  &__main-content-wrapper {
+    text-align: center;
+  }
+
+  &__warning-icon-wrapper {
+    margin: 10px;
+  }
+
+  &__warning-icon {
+    transform: scale(1.7);
+  }
+
+  &__main-text {
+    margin: 35px 10px;
+    font-size: 1.1rem;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  &__btn {
+    width: 140px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 5px;
+    border: solid 1px hsl(0, 0%, 75%);
+    color: hsl(0, 0%, 50%);
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: hsl(0, 0%, 75%);
+      color: hsl(0, 0%, 100%);
+    }
+
+    &_accent-color {
+      background-color: hsl(0, 100%, 50%);
+      color: hsl(0, 0%, 100%);
+
+      &:hover {
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(0, 100%, 50%);
+        border: solid 1px hsl(0, 100%, 50%);
+      }
+    }
+  }
+}

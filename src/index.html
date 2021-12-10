@@ -18,10 +18,10 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <button class="nav__item-btn">Pop-up task</button>
+            <button class="nav__item-btn">Pop-up</button>
           </li>
           <li class="nav__item">
-            <button class="nav__item-btn">Search task</button>
+            <button class="nav__item-btn">Search</button>
           </li>
         </ul>
       </nav>
@@ -29,24 +29,30 @@
     <main class="main">
       <section class="modal-popup">
         <div class="modal-popup__container">
-          <div class="modal-popup__close-btn">
+          <div class="modal-popup__close-icon-wrapper">
             <img
               class="modal-popup__close-icon"
-              src="./assets/icons/icon-popup-close.svg"
+              src="/icons/icon-popup-close.svg"
               alt=""
             />
           </div>
-          <img
-            class="modal-popup__warning-icon"
-            src="./assets/icons/icon-warning_notify-red.svg"
-            alt=""
-          />
-          <p class="modal-popup__main-text">This is an amazing pop-up</p>
-          <div class="modal-popup__btn-container">
-            <button class="modal-popup__btn">Cancel</button>
-            <button class="modal-popup__btn modal-popup__btn_accent-color">
-              Uninstall
-            </button>
+          <div class="modal-popup__main-content-wrapper">
+            <div class="modal-popup__warning-icon-wrapper">
+              <img
+                class="modal-popup__warning-icon"
+                src="/icons/icon-warning_notify-red.svg"
+                alt=""
+              />
+            </div>
+            <p class="modal-popup__main-text">
+              Are you sure you want to uninstall this wonderful app?
+            </p>
+            <div class="modal-popup__btn-wrapper">
+              <button class="modal-popup__btn">Cancel</button>
+              <button class="modal-popup__btn modal-popup__btn_accent-color">
+                Uninstall
+              </button>
+            </div>
           </div>
         </div>
       </section>
