@@ -58,7 +58,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 0;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: hsla(0, 0%, 0%, 0.5);
@@ -88,7 +88,7 @@ body {
     }
   }
 
-  &__main-content-wrapper {
+  &__main-content-container {
     text-align: center;
   }
 
@@ -105,7 +105,7 @@ body {
     font-size: 1.1rem;
   }
 
-  &__btn-wrapper {
+  &__btn-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
