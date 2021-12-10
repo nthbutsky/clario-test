@@ -8,12 +8,11 @@ let inputTimer;
 const doneTypingInterval = 1000;
 const baseUrl = 'https://www.googleapis.com/books/v1/volumes?q=';
 const maxResults = '&maxResults=40';
-let searchResultArray = [];
 
 searchBtn.addEventListener('click', showBookSearch);
 searchInput.addEventListener('keyup', () => {
   clearTimeout(inputTimer);
-  if (searchInput.value) {
+  if (searchInput.value.length > 3) {
     inputTimer = setTimeout(searchBook, doneTypingInterval);
   }
 });
@@ -29,10 +28,8 @@ async function searchBook() {
     const searchQuery = searchInput.value;
     const response = await fetch(baseUrl + searchQuery + maxResults);
     const data = await response.json();
-    searchResultArray = data.items;
-    console.log(searchResultArray);
     searchOutput.innerHTML = ' ';
-    showSearchResult(searchResultArray);
+    showSearchResult(data.items);
   } catch (error) {
     console.log('Rejected', error);
   }
