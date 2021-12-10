@@ -32,5 +32,4 @@ function showModalPopup() {
 
 function hideModalPopup() {
   modalPopup.style.display = 'none';
-  arrow.style.display = 'initial';
 }

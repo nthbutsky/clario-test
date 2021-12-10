@@ -1,6 +1,6 @@
 @import '~normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import '_loader.scss';
+@import '_loader.scss', '_animations.scss';
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -62,6 +62,14 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .nav {
+    &__item-btn {
+      top: 0;
+    }
+  }
+}
+
 // MODAL POPUP SECTION
 
 .modal-popup {
@@ -76,15 +84,6 @@ body {
   left: 0;
   background-color: hsla(0, 0%, 0%, 0.5);
   animation: modal-fade-in 0.5s ease-in-out;
-
-  @keyframes modal-fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 
   &__container {
     position: relative;
@@ -254,15 +253,6 @@ body {
 
     &:hover p {
       animation: item-text-rotate 0.3s ease-out;
-
-      @keyframes item-text-rotate {
-        0% {
-          transform: rotate(0);
-        }
-        100% {
-          transform: rotate(720deg);
-        }
-      }
     }
 
     & p {
@@ -298,31 +288,5 @@ body {
     .arrow-fixed {
       animation: arrow-fixed-anim 2.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
     }
-  }
-}
-
-@keyframes arrow-anim {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  5% {
-    transform: translateX(-0.1rem);
-  }
-  100% {
-    transform: translateX(1rem);
-    opacity: 0;
-  }
-}
-
-@keyframes arrow-fixed-anim {
-  5% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 1;
   }
 }
