@@ -1,0 +1,96 @@
+<html lang="en">
+  <head>
+    <meta name="description" content="Clario Test Tasks">
+    <meta name="keywords" content="JavaScript, SCSS, Webpack, BEM">
+    <meta name="author" content="Denis Butsky">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Clario Test Tasks</title>
+  <script defer="defer" src="vendors-node_modules_babel_polyfill_lib_index_js.js"></script><script defer="defer" src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <button class="nav__item-btn" id="popup-btn">Modal</button>
+          </li>
+          <li class="nav__item">
+            <button class="nav__item-btn" id="search-btn">Search</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="modal-popup" id="modal-popup">
+        <div class="modal-popup__container">
+          <div class="modal-popup__close-icon-wrapper" id="modal-close-btn">
+            <img class="modal-popup__close-icon" src="/icons/icon-popup-close.svg" alt="">
+          </div>
+          <div class="modal-popup__main-content-container">
+            <div class="modal-popup__warning-icon-wrapper">
+              <img class="modal-popup__warning-icon" src="/icons/icon-warning_notify-red.svg" alt="">
+            </div>
+            <p class="modal-popup__main-text">
+              Are you sure you want to uninstall this wonderful app?
+            </p>
+            <div class="modal-popup__btn-container">
+              <button class="modal-popup__btn" id="cancel-btn">Cancel</button>
+              <button class="modal-popup__btn modal-popup__btn_accent-color" id="uninstall-btn">
+                Uninstall
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="book-search" id="book-search">
+        <div class="book-search__container">
+          <input class="book-search__input" id="book-search-input" type="search" placeholder="Search some good book">
+          <div class="book-search__result" id="book-search-result"></div>
+        </div>
+      </section>
+      <section class="arrow-icon" id="arrow">
+        <svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="prev" transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)">
+            <polygon class="arrow" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+            <polygon class="arrow-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+          </g>
+        </svg>
+      </section>
+      <section class="loader" id="loader">
+        <div class="book">
+          <div class="inner">
+            <div class="left"></div>
+            <div class="middle"></div>
+            <div class="right"></div>
+          </div>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

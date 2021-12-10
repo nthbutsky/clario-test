@@ -1,0 +1,1365 @@
+/*!***************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/styles.scss ***!
+  \***************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+/*!**********************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/normalize.css/normalize.css ***!
+  \**********************************************************************************************/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/*!*******************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/styles.scss (1) ***!
+  \*******************************************************************************************************************/
+.loader {
+  display: none;
+}
+
+.book {
+  --color: #fff;
+  --duration: 6.8s;
+  width: 32px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 32px 0 0 0;
+  zoom: 1.5;
+}
+
+.book .inner {
+  width: 32px;
+  height: 12px;
+  position: relative;
+  transform-origin: 2px 2px;
+  transform: rotateZ(-90deg);
+  -webkit-animation: book var(--duration) ease infinite;
+  animation: book var(--duration) ease infinite;
+}
+
+.book .inner .left,
+.book .inner .right {
+  width: 60px;
+  height: 4px;
+  top: 0;
+  border-radius: 2px;
+  background: var(--color);
+  position: absolute;
+}
+
+.book .inner .left:before,
+.book .inner .right:before {
+  content: "";
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background: inherit;
+  position: absolute;
+  top: -10px;
+  left: 6px;
+}
+
+.book .inner .left {
+  right: 28px;
+  transform-origin: 58px 2px;
+  transform: rotateZ(90deg);
+  -webkit-animation: left var(--duration) ease infinite;
+  animation: left var(--duration) ease infinite;
+}
+
+.book .inner .right {
+  left: 36px;
+  transform-origin: 2px 2px;
+  transform: rotateZ(-90deg);
+  -webkit-animation: right var(--duration) ease infinite;
+  animation: right var(--duration) ease infinite;
+}
+
+.book .inner .middle {
+  width: 32px;
+  height: 12px;
+  border: 4px solid var(--color);
+  border-top: 0;
+  border-radius: 0 0 9px 9px;
+  transform: translateY(2px);
+}
+
+.book ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.book ul li {
+  height: 4px;
+  border-radius: 2px;
+  transform-origin: 100% 2px;
+  width: 48px;
+  right: 0;
+  top: -10px;
+  position: absolute;
+  background: var(--color);
+  transform: rotateZ(0deg) translateX(-18px);
+  -webkit-animation-duration: var(--duration);
+  animation-duration: var(--duration);
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.book ul li:nth-child(0) {
+  -webkit-animation-name: page-0;
+  animation-name: page-0;
+}
+
+.book ul li:nth-child(1) {
+  -webkit-animation-name: page-1;
+  animation-name: page-1;
+}
+
+.book ul li:nth-child(2) {
+  -webkit-animation-name: page-2;
+  animation-name: page-2;
+}
+
+.book ul li:nth-child(3) {
+  -webkit-animation-name: page-3;
+  animation-name: page-3;
+}
+
+.book ul li:nth-child(4) {
+  -webkit-animation-name: page-4;
+  animation-name: page-4;
+}
+
+.book ul li:nth-child(5) {
+  -webkit-animation-name: page-5;
+  animation-name: page-5;
+}
+
+.book ul li:nth-child(6) {
+  -webkit-animation-name: page-6;
+  animation-name: page-6;
+}
+
+.book ul li:nth-child(7) {
+  -webkit-animation-name: page-7;
+  animation-name: page-7;
+}
+
+.book ul li:nth-child(8) {
+  -webkit-animation-name: page-8;
+  animation-name: page-8;
+}
+
+.book ul li:nth-child(9) {
+  -webkit-animation-name: page-9;
+  animation-name: page-9;
+}
+
+.book ul li:nth-child(10) {
+  -webkit-animation-name: page-10;
+  animation-name: page-10;
+}
+
+.book ul li:nth-child(11) {
+  -webkit-animation-name: page-11;
+  animation-name: page-11;
+}
+
+.book ul li:nth-child(12) {
+  -webkit-animation-name: page-12;
+  animation-name: page-12;
+}
+
+.book ul li:nth-child(13) {
+  -webkit-animation-name: page-13;
+  animation-name: page-13;
+}
+
+.book ul li:nth-child(14) {
+  -webkit-animation-name: page-14;
+  animation-name: page-14;
+}
+
+.book ul li:nth-child(15) {
+  -webkit-animation-name: page-15;
+  animation-name: page-15;
+}
+
+.book ul li:nth-child(16) {
+  -webkit-animation-name: page-16;
+  animation-name: page-16;
+}
+
+.book ul li:nth-child(17) {
+  -webkit-animation-name: page-17;
+  animation-name: page-17;
+}
+
+.book ul li:nth-child(18) {
+  -webkit-animation-name: page-18;
+  animation-name: page-18;
+}
+
+@-webkit-keyframes page-0 {
+  4% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  13%, 54% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  63% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-0 {
+  4% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  13%, 54% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  63% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-1 {
+  5.86% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  14.74%, 55.86% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  64.74% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-1 {
+  5.86% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  14.74%, 55.86% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  64.74% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-2 {
+  7.72% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  16.48%, 57.72% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  66.48% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-2 {
+  7.72% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  16.48%, 57.72% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  66.48% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-3 {
+  9.58% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  18.22%, 59.58% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  68.22% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-3 {
+  9.58% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  18.22%, 59.58% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  68.22% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-4 {
+  11.44% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  19.96%, 61.44% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  69.96% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-4 {
+  11.44% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  19.96%, 61.44% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  69.96% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-5 {
+  13.3% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  21.7%, 63.3% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  71.7% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-5 {
+  13.3% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  21.7%, 63.3% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  71.7% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-6 {
+  15.16% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  23.44%, 65.16% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  73.44% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-6 {
+  15.16% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  23.44%, 65.16% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  73.44% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-7 {
+  17.02% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  25.18%, 67.02% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  75.18% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-7 {
+  17.02% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  25.18%, 67.02% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  75.18% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-8 {
+  18.88% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  26.92%, 68.88% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  76.92% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-8 {
+  18.88% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  26.92%, 68.88% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  76.92% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-9 {
+  20.74% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  28.66%, 70.74% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  78.66% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-9 {
+  20.74% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  28.66%, 70.74% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  78.66% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-10 {
+  22.6% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  30.4%, 72.6% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  80.4% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-10 {
+  22.6% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  30.4%, 72.6% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  80.4% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-11 {
+  24.46% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  32.14%, 74.46% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  82.14% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-11 {
+  24.46% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  32.14%, 74.46% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  82.14% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-12 {
+  26.32% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  33.88%, 76.32% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  83.88% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-12 {
+  26.32% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  33.88%, 76.32% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  83.88% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-13 {
+  28.18% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  35.62%, 78.18% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  85.62% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-13 {
+  28.18% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  35.62%, 78.18% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  85.62% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-14 {
+  30.04% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  37.36%, 80.04% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  87.36% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-14 {
+  30.04% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  37.36%, 80.04% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  87.36% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-15 {
+  31.9% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  39.1%, 81.9% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  89.1% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-15 {
+  31.9% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  39.1%, 81.9% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  89.1% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-16 {
+  33.76% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  40.84%, 83.76% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  90.84% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-16 {
+  33.76% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  40.84%, 83.76% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  90.84% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-17 {
+  35.62% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  42.58%, 85.62% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  92.58% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-17 {
+  35.62% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  42.58%, 85.62% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  92.58% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes page-18 {
+  37.48% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  44.32%, 87.48% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  94.32% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@keyframes page-18 {
+  37.48% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+  44.32%, 87.48% {
+    transform: rotateZ(180deg) translateX(-18px);
+  }
+  94.32% {
+    transform: rotateZ(0deg) translateX(-18px);
+  }
+}
+@-webkit-keyframes left {
+  4% {
+    transform: rotateZ(90deg);
+  }
+  10%, 40% {
+    transform: rotateZ(0deg);
+  }
+  46%, 54% {
+    transform: rotateZ(90deg);
+  }
+  60%, 90% {
+    transform: rotateZ(0deg);
+  }
+  96% {
+    transform: rotateZ(90deg);
+  }
+}
+@keyframes left {
+  4% {
+    transform: rotateZ(90deg);
+  }
+  10%, 40% {
+    transform: rotateZ(0deg);
+  }
+  46%, 54% {
+    transform: rotateZ(90deg);
+  }
+  60%, 90% {
+    transform: rotateZ(0deg);
+  }
+  96% {
+    transform: rotateZ(90deg);
+  }
+}
+@-webkit-keyframes right {
+  4% {
+    transform: rotateZ(-90deg);
+  }
+  10%, 40% {
+    transform: rotateZ(0deg);
+  }
+  46%, 54% {
+    transform: rotateZ(-90deg);
+  }
+  60%, 90% {
+    transform: rotateZ(0deg);
+  }
+  96% {
+    transform: rotateZ(-90deg);
+  }
+}
+@keyframes right {
+  4% {
+    transform: rotateZ(-90deg);
+  }
+  10%, 40% {
+    transform: rotateZ(0deg);
+  }
+  46%, 54% {
+    transform: rotateZ(-90deg);
+  }
+  60%, 90% {
+    transform: rotateZ(0deg);
+  }
+  96% {
+    transform: rotateZ(-90deg);
+  }
+}
+@-webkit-keyframes book {
+  4% {
+    transform: rotateZ(-90deg);
+  }
+  10%, 40% {
+    transform: rotateZ(0deg);
+    transform-origin: 2px 2px;
+  }
+  40.01%, 59.99% {
+    transform-origin: 30px 2px;
+  }
+  46%, 54% {
+    transform: rotateZ(90deg);
+  }
+  60%, 90% {
+    transform: rotateZ(0deg);
+    transform-origin: 2px 2px;
+  }
+  96% {
+    transform: rotateZ(-90deg);
+  }
+}
+@keyframes book {
+  4% {
+    transform: rotateZ(-90deg);
+  }
+  10%, 40% {
+    transform: rotateZ(0deg);
+    transform-origin: 2px 2px;
+  }
+  40.01%, 59.99% {
+    transform-origin: 30px 2px;
+  }
+  46%, 54% {
+    transform: rotateZ(90deg);
+  }
+  60%, 90% {
+    transform: rotateZ(0deg);
+    transform-origin: 2px 2px;
+  }
+  96% {
+    transform: rotateZ(-90deg);
+  }
+}
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes item-text-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+@keyframes arrow-anim {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  5% {
+    transform: translateX(-0.1rem);
+  }
+  100% {
+    transform: translateX(1rem);
+    opacity: 0;
+  }
+}
+@keyframes arrow-fixed-anim {
+  5% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  background: linear-gradient(91.55deg, #4840dd 0.76%, #7e43d6 98.12%);
+  box-shadow: inset 0 0 10px black;
+}
+
+.nav {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.nav__item {
+  position: relative;
+  width: 150px;
+}
+.nav__item-btn {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: white;
+  color: #151d51;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px black;
+  transition: all 0.3s ease-in-out;
+}
+.nav__item-btn:hover {
+  background-color: #5cd6c0;
+  top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__item-btn {
+    top: 0;
+  }
+}
+.modal-popup {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: modal-fade-in 0.5s ease-in-out;
+}
+.modal-popup__container {
+  position: relative;
+  width: 320px;
+  height: 190px;
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+.modal-popup__close-icon-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.modal-popup__close-icon {
+  transform: scale(0.8);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.modal-popup__close-icon:hover {
+  transform: scale(0.9);
+}
+.modal-popup__main-content-container {
+  text-align: center;
+}
+.modal-popup__warning-icon-wrapper {
+  margin: 10px;
+}
+.modal-popup__warning-icon {
+  transform: scale(1.7);
+}
+.modal-popup__main-text {
+  margin: 35px 10px;
+  font-size: 1.1rem;
+}
+.modal-popup__btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.modal-popup__btn {
+  width: 140px;
+  height: 25px;
+  margin: 5px;
+  border-radius: 5px;
+  border: solid 1px #bfbfbf;
+  color: gray;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.modal-popup__btn:hover {
+  background-color: #bfbfbf;
+  color: white;
+}
+.modal-popup__btn_accent-color {
+  background-color: red;
+  color: white;
+}
+.modal-popup__btn_accent-color:hover {
+  background-color: white;
+  color: red;
+  border: solid 1px red;
+}
+
+.book-search {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.book-search__container {
+  text-align: center;
+}
+.book-search__input {
+  width: 340px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  outline-style: none;
+  padding: 15px;
+  margin: 50px 0 20px 0;
+  color: #151d51;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+.book-search__input:hover {
+  box-shadow: 0 0 20px #151d51;
+}
+.book-search__input:focus {
+  box-shadow: 0 0 20px #151d51;
+}
+.book-search__result {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.book-search__item {
+  position: relative;
+  height: 300px;
+  width: 200px;
+  border: 2px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background: linear-gradient(45deg, #4840dd 0.76%, #7e43d6 98.12%);
+}
+.book-search__item:hover {
+  box-shadow: 0 0 10px black;
+}
+.book-search__item:hover img {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.3);
+}
+.book-search__item:hover .book-search__item-cover {
+  transition: all 0.3s ease-in-out;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.book-search__item-cover {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.book-search__item-cover:hover p {
+  animation: item-text-rotate 0.3s ease-out;
+}
+.book-search__item-cover p {
+  padding: 10px;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.arrow-icon svg {
+  width: 200px;
+  height: auto;
+  margin: 0 2rem;
+  overflow: visible;
+  fill: white;
+}
+.arrow-icon svg polygon,
+.arrow-icon svg path {
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+  fill: white;
+}
+.arrow-icon svg .arrow {
+  animation: arrow-anim 2.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.arrow-icon svg .arrow-fixed {
+  animation: arrow-fixed-anim 2.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+
+/*# sourceMappingURL=main.css.map*/
