@@ -1128,7 +1128,6 @@ body {
   font-family: "Open Sans", sans-serif;
   height: 100%;
   background: linear-gradient(91.55deg, #4840dd 0.76%, #7e43d6 98.12%);
-  box-shadow: inset 0 0 10px black;
 }
 
 .nav {
